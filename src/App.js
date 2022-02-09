@@ -1,9 +1,11 @@
 // import logo from './logo.svg';
 import './App.css';
-import Btn from './Btn';
+
 import Profile from './profile/Profile';
 
-
+const display = () => {
+  alert("Hello")
+}
 
 function App() {
   let Persons = {
@@ -11,6 +13,7 @@ function App() {
     email:"oussema@yahoo.fr",
     phone:23564}
 
+   
     
   
   return (
@@ -19,10 +22,11 @@ function App() {
 
     <div className="App">
       
-      <Btn Persons={Persons}> </Btn>
-      <Profile Persons={Persons}  >
+      {/* <button onClick={() => alert('hello '+Persons.name) }   >Click Me</button> */}
+      <Profile Persons={Persons} display={display} >
         <img src='./hello.jpg' />
       </Profile>
+      
     </div>
   );
 }
