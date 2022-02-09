@@ -2,13 +2,14 @@ import React from 'react'
 import propTypes from 'prop-types'
 
 
+
 function Profile({Persons, children}) {
    
   return (
     <div>
-        <h1 className=''>{Persons.name}</h1>
-        <h2 className=''>{Persons.email}</h2>
-        <h3 className=''>{Persons.phone}</h3>
+        <h1 className='user'>{Persons.name}</h1>
+        <h2 className='user'>{Persons.email}</h2>
+        <h3 className='user'>{Persons.phone}</h3>
         {children}
         
     </div>
